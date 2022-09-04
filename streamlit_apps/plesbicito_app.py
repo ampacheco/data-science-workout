@@ -38,6 +38,7 @@ df_apruebo["Date"]=pd.to_datetime(df_apruebo["Date"]).dt.date
 
 # Insert Columns
 col1, col2, col3 = st.columns(3)
+
 with col1:
     st.header("A cat")
     st.image("https://static.streamlit.io/examples/cat.jpg")
