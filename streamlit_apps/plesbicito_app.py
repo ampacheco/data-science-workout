@@ -33,9 +33,3 @@ data_indeciso_url='https://raw.githubusercontent.com/ampacheco/data-science-work
 
 data_apruebo_url='https://raw.githubusercontent.com/ampacheco/data-science-workout/main/data/aprueban.csv'
 df_apruebo = pd.read_csv(data_apruebo_url)
-df_apruebo["Date"]=pd.to_datetime(df_apruebo["Date"]).dt.date
-
-
-
-
-
