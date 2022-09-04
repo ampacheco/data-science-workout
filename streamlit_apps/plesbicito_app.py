@@ -25,3 +25,17 @@ filtered_df=df[(df["Date"]>=s_date) & (df["Date"]<=e_date)]
 
 st.write(filtered_df)
 st.line_chart(filtered_df, x="Date", y=["Apruebo", "Rechazo", "NSNR"])
+
+# Insert Columns
+data_apruebo_url='https://raw.githubusercontent.com/ampacheco/data-science-workout/main/data/aprueban.csv'
+data_rechazo_url='https://raw.githubusercontent.com/ampacheco/data-science-workout/main/data/aprueban.csv'
+data_indeciso_url='https://raw.githubusercontent.com/ampacheco/data-science-workout/main/data/aprueban.csv'
+
+data_apruebo_url='https://raw.githubusercontent.com/ampacheco/data-science-workout/main/data/aprueban.csv'
+df_apruebo = pd.read_csv(data_apruebo_url)
+df_apruebo["Date"]=pd.to_datetime(df_apruebo["Date"]).dt.date
+
+
+
+
+
